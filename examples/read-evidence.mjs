@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Puneet Chugh
 // Provider-free, credential-free display of illustrative stored labels.
 // This is not a scoring engine and makes no market or contract claims.
 import { readFileSync } from 'node:fs';
