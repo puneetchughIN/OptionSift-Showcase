@@ -1,0 +1,314 @@
+{
+  "label": "Synthetic demonstration data",
+  "market_date": "2026-10-02",
+  "currency": "USD",
+  "observations": [
+    {
+      "ticker": "SPY",
+      "framework": "f01",
+      "close": 568.42,
+      "rsi14": 28.6,
+      "hv_rank_iv_proxy": 32.4,
+      "stored_status": "CANDIDATE",
+      "checks": [
+        {
+          "id": "location",
+          "status": "green",
+          "actual": 1.4,
+          "threshold": "0% to +3% green; -5% to <0% or >3% to +5% amber",
+          "explanation": "Rounded price distance from MA200.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "slope200",
+          "status": "green",
+          "actual": "rising",
+          "threshold": "ten-session change >+0.05% rising; [-0.05%, +0.05%] flat/amber; <-0.05% falling",
+          "explanation": "MA200 is rising.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "rsi",
+          "status": "green",
+          "actual": 28.6,
+          "threshold": "<=30 green; >30 through 40 amber",
+          "explanation": "Wilder RSI14 with legacy rounding.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "hv_rank",
+          "status": "green",
+          "actual": 32.4,
+          "threshold": "<=40 green; >40 through 60 amber",
+          "explanation": "Historical volatility rank is an IV proxy, not actual IV rank.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "earnings",
+          "status": "not_applicable",
+          "actual": null,
+          "threshold": "N/A",
+          "explanation": "Corporate earnings do not apply to F01 ETFs (DECISIONS #4).",
+          "source": "configured_universe",
+          "required": false
+        }
+      ]
+    },
+    {
+      "ticker": "QQQ",
+      "framework": "f01",
+      "close": 486.18,
+      "rsi14": 36.2,
+      "hv_rank_iv_proxy": 46.1,
+      "stored_status": "WATCH",
+      "checks": [
+        {
+          "id": "location",
+          "status": "amber",
+          "actual": 3.7,
+          "threshold": "0% to +3% green; -5% to <0% or >3% to +5% amber",
+          "explanation": "Rounded price distance from MA200.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "slope200",
+          "status": "green",
+          "actual": "rising",
+          "threshold": "ten-session change >+0.05% rising; [-0.05%, +0.05%] flat/amber; <-0.05% falling",
+          "explanation": "MA200 is rising.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "rsi",
+          "status": "amber",
+          "actual": 36.2,
+          "threshold": "<=30 green; >30 through 40 amber",
+          "explanation": "Wilder RSI14 with legacy rounding.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "hv_rank",
+          "status": "amber",
+          "actual": 46.1,
+          "threshold": "<=40 green; >40 through 60 amber",
+          "explanation": "Historical volatility rank is an IV proxy, not actual IV rank.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "earnings",
+          "status": "not_applicable",
+          "actual": null,
+          "threshold": "N/A",
+          "explanation": "Corporate earnings do not apply to F01 ETFs (DECISIONS #4).",
+          "source": "configured_universe",
+          "required": false
+        }
+      ]
+    },
+    {
+      "ticker": "IWM",
+      "framework": "f01",
+      "close": 214.73,
+      "rsi14": 46.8,
+      "hv_rank_iv_proxy": 66.2,
+      "stored_status": "WAIT",
+      "checks": [
+        {
+          "id": "location",
+          "status": "red",
+          "actual": 6.3,
+          "threshold": "0% to +3% green; -5% to <0% or >3% to +5% amber",
+          "explanation": "Rounded price distance from MA200.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "slope200",
+          "status": "amber",
+          "actual": "flat",
+          "threshold": "ten-session change >+0.05% rising; [-0.05%, +0.05%] flat/amber; <-0.05% falling",
+          "explanation": "MA200 is flat.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "rsi",
+          "status": "red",
+          "actual": 46.8,
+          "threshold": "<=30 green; >30 through 40 amber",
+          "explanation": "Wilder RSI14 with legacy rounding.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "hv_rank",
+          "status": "red",
+          "actual": 66.2,
+          "threshold": "<=40 green; >40 through 60 amber",
+          "explanation": "Historical volatility rank is an IV proxy, not actual IV rank.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "earnings",
+          "status": "not_applicable",
+          "actual": null,
+          "threshold": "N/A",
+          "explanation": "Corporate earnings do not apply to F01 ETFs (DECISIONS #4).",
+          "source": "configured_universe",
+          "required": false
+        }
+      ]
+    },
+    {
+      "ticker": "ORCL",
+      "framework": "f02",
+      "close": 168.92,
+      "rsi14": 41.4,
+      "hv_rank_iv_proxy": 35.2,
+      "stored_status": "UNAVAILABLE",
+      "checks": [
+        {
+          "id": "location",
+          "status": "green",
+          "actual": 1.2,
+          "threshold": "0% to +3% green; -5% to <0% or >3% to +5% amber",
+          "explanation": "Rounded price distance from MA200.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "slope200",
+          "status": "green",
+          "actual": "rising",
+          "threshold": "ten-session change >+0.05% rising; [-0.05%, +0.05%] flat/amber; <-0.05% falling",
+          "explanation": "MA200 is rising.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "reclaim50",
+          "status": "green",
+          "actual": [
+            0.6,
+            "rising"
+          ],
+          "threshold": "distance >= 0% and rising MA50; >= 0% and flat is amber",
+          "explanation": "Requires price at/above a rising MA50; multi-month basing remains a manual check.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "hv_rank",
+          "status": "green",
+          "actual": 35.2,
+          "threshold": "<=40 green; >40 through 60 amber",
+          "explanation": "Historical volatility rank is an IV proxy, not actual IV rank.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "earnings",
+          "status": "green",
+          "actual": [
+            "2026-11-16",
+            null,
+            45
+          ],
+          "threshold": "> 21 days green; 15-21 amber; 0-14 red",
+          "explanation": "Calendar days from the supplied market date to the earliest plausible earnings date.",
+          "source": "supplied_earnings",
+          "required": true
+        },
+        {
+          "id": "mktcap",
+          "status": "unknown",
+          "actual": null,
+          "threshold": ">= $200B raw USD",
+          "explanation": "Required raw market cap is missing, invalid or non-finite.",
+          "source": "supplied_market_cap",
+          "required": true
+        }
+      ]
+    },
+    {
+      "ticker": "NFLX",
+      "framework": "f02",
+      "close": 702.14,
+      "rsi14": 44.2,
+      "hv_rank_iv_proxy": 36.1,
+      "stored_status": "EXCLUDED",
+      "checks": [
+        {
+          "id": "location",
+          "status": "green",
+          "actual": 1.8,
+          "threshold": "0% to +3% green; -5% to <0% or >3% to +5% amber",
+          "explanation": "Rounded price distance from MA200.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "slope200",
+          "status": "green",
+          "actual": "rising",
+          "threshold": "ten-session change >+0.05% rising; [-0.05%, +0.05%] flat/amber; <-0.05% falling",
+          "explanation": "MA200 is rising.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "reclaim50",
+          "status": "green",
+          "actual": [
+            0.9,
+            "rising"
+          ],
+          "threshold": "distance >= 0% and rising MA50; >= 0% and flat is amber",
+          "explanation": "Requires price at/above a rising MA50; multi-month basing remains a manual check.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "hv_rank",
+          "status": "green",
+          "actual": 36.1,
+          "threshold": "<=40 green; >40 through 60 amber",
+          "explanation": "Historical volatility rank is an IV proxy, not actual IV rank.",
+          "source": "supplied_indicators",
+          "required": true
+        },
+        {
+          "id": "earnings",
+          "status": "green",
+          "actual": [
+            "2026-11-16",
+            null,
+            45
+          ],
+          "threshold": "> 21 days green; 15-21 amber; 0-14 red",
+          "explanation": "Calendar days from the supplied market date to the earliest plausible earnings date.",
+          "source": "supplied_earnings",
+          "required": true
+        },
+        {
+          "id": "mktcap",
+          "status": "red",
+          "actual": 199960000000,
+          "threshold": ">= $200B raw USD",
+          "explanation": "Compare raw USD before display rounding; exactly $200B passes.",
+          "source": "supplied_market_cap",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
