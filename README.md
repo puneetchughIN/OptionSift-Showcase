@@ -13,20 +13,23 @@ operational source remain private.
 
 ## Why build it?
 
-A strategy document can tell a researcher what to check. Doing those checks
-consistently across a watch universe is a different problem. Prices, moving
-averages, volatility, earnings dates and applicability can come from different
-places and change at different times. A favorable-looking setup can depend on
-an input that is missing or a rule that does not apply to that instrument.
+I built OptionSift to turn options strategy rules into a research process I could
+use consistently. The starting point was three established frameworks and a
+legacy personal dashboard. What I needed was a practical way to work through a
+watchlist, identify stocks and ETFs worth investigating, and keep the reasoning
+behind those decisions.
 
-The project began with three existing framework documents and a legacy personal
-dashboard. The product question was concrete: **can those frameworks become a
-repeatable research workflow whose results remain explainable and reviewable?**
+The hard part was keeping that reasoning intact. A setup depends on several
+conditions: whether the framework applies, what the data shows, how recent it is,
+and which inputs are missing. A candidate label becomes useful when I can trace
+those conditions back to the evidence and return to a previous scan without
+losing its context.
 
-OptionSift brings the checks, their evidence and their dates into one workspace.
-Its intended benefit is a more consistent first pass and a clearer record of
-what still needs research. No time-saving or investment-performance result has
-been measured.
+That shaped the product goal: **make the first pass consistent, the reasoning
+visible, and the research history reviewable.** OptionSift brings the screening
+rules, supporting evidence and saved results into one workspace, so I can focus
+my research time on promising underlying assets with a clear view of what still
+needs to be checked during manual options-contract research.
 
 ## The problems it addresses
 
