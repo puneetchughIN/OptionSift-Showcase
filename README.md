@@ -190,8 +190,12 @@ open interest, bid–ask spread and contract eligibility remain manual checks.
 Legacy imported evidence is unverified; scan History is not a backtest.
 There are no measured return, win-rate or productivity claims.
 
-Case-study text, images, name and illustrative examples are copyright © 2026
-Puneet Chugh; no reuse license is granted here. The operational source and private
-research are not included. See the [font notice](FONT_NOTICE.md) for the bundled
+Copyright © 2026 Puneet Chugh. The case-study text, screenshots and synthetic
+sample data are licensed under [CC BY 4.0](LICENSE). The example script is
+licensed under [MIT](LICENSE-MIT). See [Licensing](LICENSING.md) for scope and
+attribution.
+
+The operational source and private research remain private and are not covered
+by these licenses. See the [font notice](FONT_NOTICE.md) for the bundled
 third-party font's separate SIL Open Font License.
 
